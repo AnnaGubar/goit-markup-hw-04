@@ -18,9 +18,9 @@
       <nav class="nav-header">
         <ul class="header-menu list">
           <li><a href="./"><span class="web">Web</span><span class="studio">Studio</span></a></li>
-          <li><a href="">Студия</a></li>
-          <li><a href="./portfolio.html">Портфолио</a></li>
-          <li><a href="">Контакты</a></li>
+          <li><a href="" class="decor current">Студия</a></li>
+          <li><a href="./portfolio.html" class="decor">Портфолио</a></li>
+          <li><a href="" class="decor">Контакты</a></li>
         </ul>
         <ul class="contacts-header list">
           <li class="header-menu-contacts">
@@ -53,7 +53,7 @@
             Эффективные решения<br>для вашего бизнеса
           </h1>
         </li>
-        <li><a href="" class="button">Заказать услугу</a></li>
+        <li><a href="" class="button" data-modal-open>Заказать услугу</a></li>
       </ul>
       </div>
     </section>
@@ -115,16 +115,25 @@
         <h2 class="occupation">Чем мы занимаемся</h2>
         <ul class="list occupation-list">
           <li class="occupation-title">
-            <img src="./images/img1.jpg" alt="" width="370" />
-            <!-- <p class="white-title text-accent">Десктопные приложения</p> -->
+            <div class="image-box"><img src="./images/img1.jpg" alt="" width="370" />
+              <div class="white-title-box">
+                <p class="white-title text-accent">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
+              </div>
+            </div>
           </li>
           <li class="occupation-title">
-            <img src="./images/img2.jpg" alt="" width="370" />
-            <!-- <p class="white-title text-accent">Мобильные приложения</p> -->
+            <div class="image-box"><img src="./images/img2.jpg" alt="" width="370" />
+              <div class="white-title-box">
+                <p class="white-title text-accent">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
+              </div>
+            </div>
           </li>
           <li class="occupation-title">
-            <img src="./images/img3.jpg" alt="" width="370" />
-            <!-- <p class="white-title text-accent">Дизайнерские решения</p> -->
+            <div class="image-box"><img src="./images/img3.jpg" alt="" width="370" />
+              <div class="white-title-box">
+                <p class="white-title text-accent">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
+              </div>
+            </div>
           </li>
         </ul>
       </div>
@@ -394,6 +403,16 @@
 
     </div>
   </footer>
+
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button class="btn-close" data-modal-close><svg class="close" width="11" height="11">
+          <use href="./images/sprite.svg#close"></use>
+        </svg></button>
+    </div>
+  </div>
+  <script src="./js/modal.js"></script>
+
 </body>
 
 </html>
